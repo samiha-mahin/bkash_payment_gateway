@@ -1,5 +1,5 @@
 import axios from 'axios';
-import paymentModel from '../models/payment_model.js'
+import {paymentModel} from '../models/payment_model.js'
 import globals from 'node-global-storage';
 import { v4 as uuidv4 } from 'uuid';
 

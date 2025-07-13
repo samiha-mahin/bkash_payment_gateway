@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const payment = new Schema({
+const payment = new mongoose.Schema({
     userId: {
         type: Number,
     },
@@ -18,4 +18,4 @@ const payment = new Schema({
     }
 }, { timestamps: true })
 
-module.exports = model('payments', payment)
+export const paymentModel = mongoose.model('payment', payment);

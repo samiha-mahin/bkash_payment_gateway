@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './utils/db.js';
+import bkashRoute from './routes/bkash_route.js';
 
 dotenv.config({});
 
@@ -18,6 +19,8 @@ const corsOptions = {
   credentials: true, // Ensures cookies are sent
 };
 app.use(cors(corsOptions));
+
+app.use('/api', bkashRoute);
 
 const PORT = process.env.PORT || 5000;
 
