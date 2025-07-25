@@ -1,8 +1,9 @@
 import React from 'react'
+import Success from './Success'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div><Success/></div>
   )
 }
 
