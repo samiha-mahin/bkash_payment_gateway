@@ -3,7 +3,8 @@ import Success from './Success'
 
 const Home = () => {
   return (
-    <div><Success/></div>
+    <div><Success/>
+    </div>
   )
 }
 
