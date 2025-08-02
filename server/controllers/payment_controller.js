@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {paymentModel} from '../models/payment_model.js'
-import globals from 'node-global-storage';
+import * as globals from '../globals.js';
 import { v4 as uuidv4 } from 'uuid';
 
 const bkash_headers = async () => {
